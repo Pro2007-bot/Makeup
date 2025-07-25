@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adonai Beauty Palour</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #fff; color: #333; }
+
+    header {
+      background-color: #000;
+      padding: 1rem 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      background: #fff5f8;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      padding-right: 2rem;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #c2185b;
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero-text a {
+      display: inline-block;
+      background: #c2185b;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .hero-image {
+      flex: 1;
+      min-width: 280px;
+    }
+    .hero-image img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #c2185b;
+      margin-bottom: 2rem;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+
+    .about, .contact {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .contact button {
+      background: #c2185b;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+      .hero-text { padding: 0; }
+      .hero-image { margin-top: 1.5rem; }
+      nav { margin-top: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><strong>Adonail</strong></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>IT'S YOUR DAY TO SHINE</h1>
+      <p>Discover premium makeup products that enhance your natural beauty. Feel confident, look radiant.</p>
+    </div>
+    <div class="hero-image">
+      <img src="./imgs/AdobeStock_328638837_Preview-removebg-preview.png" alt="Makeup Model" />
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2> Adonai Beauty Palour</h2>
+    <div class="about">
+      <p>At Adonail Beauty, we believe that makeup should enhance your unique beauty, not cover it. Our curated selection of high-quality cosmetics is made with skin-loving ingredients and designed for all skin types and tones. Whether you're a pro or just starting out, we've got everything you need to shine.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <form  action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b414f038-38de-4ccd-bcf0-8053e73b6485">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Abonai Beauty. All rights reserved.
+  </footer>
+
+</body>
+</html>
